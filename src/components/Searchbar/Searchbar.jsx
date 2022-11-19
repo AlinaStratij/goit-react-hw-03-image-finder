@@ -1,19 +1,33 @@
+import PropTypes from 'prop-types';
+
+import {
+  SearchHeader,
+  SearchForm,
+  SearchFormBtn,
+  SearchFormBtnLabel,
+  SarchFormInput,
+} from 'components/Searchbar/Searchbar.styled';
+
 export default function SearchBar({ onSubmit }) {
   return (
-    <header class="searchbar">
-      <form class="form">
-        <button type="submit" class="button">
-          <span class="button-label">Search</span>
-        </button>
+    <SearchHeader>
+      <SearchForm>
+        <SearchFormBtn>
+          <SearchFormBtnLabel>Search</SearchFormBtnLabel>
+        </SearchFormBtn>
 
-        <input
+        <SarchFormInput
+          onSubmit={onSubmit}
           class="input"
           type="text"
           autocomplete="off"
           autofocus
           placeholder="Search images and photos"
         />
-      </form>
-    </header>
+      </SearchForm>
+    </SearchHeader>
   );
 }
+SearchBar.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};

@@ -1,7 +1,8 @@
+import { LoadBtn } from 'components/Button/Button.styled';
 export default function Button() {
   return (
     <>
-      <button type="button">Load more</button>
+      <LoadBtn>Load more</LoadBtn>
     </>
   );
 }
