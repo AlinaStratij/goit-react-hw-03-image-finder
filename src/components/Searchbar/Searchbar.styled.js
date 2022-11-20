@@ -34,8 +34,7 @@ export const SearchFormBtn = styled.button`
 
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #8989a2;
     color: #111;
     cursor: pointer;

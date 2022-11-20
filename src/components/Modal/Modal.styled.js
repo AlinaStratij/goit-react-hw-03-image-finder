@@ -18,8 +18,3 @@ export const ModalWrapper = styled.div`
   height: 500px;
   background-color: #eef2f2;
 `;
-export const ModalBtn = styled.button`
-  width: 30px;
-  height: 30px;
-  background-color: #ff00d7;
-`;

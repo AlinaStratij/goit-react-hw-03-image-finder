@@ -1,7 +1,7 @@
 export default function ImageGalleryItem() {
   return (
     <>
-      <li class="gallery-item">
+      <li className="gallery-item">
         <img src="" alt="" />
       </li>
     </>

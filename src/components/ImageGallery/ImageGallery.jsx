@@ -3,7 +3,7 @@ import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 export default function ImageGallery({ openModal }) {
   return (
     <>
-      <ul class="gallery">
+      <ul className="gallery">
         <button type="button" onClick={openModal}>
           Open mlodal
         </button>
